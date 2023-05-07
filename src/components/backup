@@ -1,0 +1,77 @@
+// import React from 'react'
+// import Button, { IButtonProps } from '@/components-v2/atoms/Button'
+// import Typography from '@/components-v2/atoms/Typography'
+
+// interface ChildProps {
+//   children: React.ReactNode;
+// }
+
+// interface TitleProps {
+//   children?: React.ReactNode;
+// }
+
+// interface ListViewWithChildren extends React.FC<ChildProps> {
+//   Header: HeaderWithChildrenProp
+//   Content: any;
+// }
+
+// interface HeaderWithChildrenProp extends React.FC<ChildProps> {
+//   Left: HeaderLeftProps
+//   Right: HeaderRightProps
+// }
+
+// interface HeaderRightProps extends React.FC<ChildProps> {
+//   PrimaryCTA: React.FC<{ label: string }>;
+//   SecondaryCTA: React.FC<{ label: string }>;
+//   children?: React.ReactNode
+// }
+
+// interface HeaderLeftProps extends React.FC<ChildProps> {
+//   Title?: React.FC<TitleProps>;
+//   children?: React.ReactNode
+// }
+
+// const ListView: ListViewWithChildren = ({ children }) => <div className="flex flex-col w-[100%] rounded">{children}</div>
+
+// const Header: HeaderWithChildrenProp = ({ children }) => <div className="p-4 flex w-100 flex-row justify-between">{children}</div>
+
+// const ListViewContent = ({ children }) => <div className="p-4 h-[100%]">{children}</div>
+
+// const HeaderLeft: HeaderLeftProps = ({ children }) => <div>{children}</div>
+// const HeaderRight: HeaderRightProps = ({ children }) => <div className="flex flex-row gap-6 items-center">{children}</div>
+
+
+// const Title: React.FC<TitleProps> = ({ children }) => <div><Typography variant="heading2" color="primary">{children}</Typography></div>
+
+// const PrimaryCTA: React.FC<{ label: string }> = ({ label }) => <Button loading={false} label={label} disabled={false} variant="black" height={40} />
+// const SecondaryCTA: React.FC<{ label: string }> = ({ label }) => <Button loading={false} label={label} disabled={false} variant="ghost" height={40} />
+
+
+
+// Header.Left = HeaderLeft
+// Header.Right = HeaderRight
+// HeaderLeft.Title = Title
+// HeaderRight.PrimaryCTA = PrimaryCTA
+// HeaderRight.SecondaryCTA = SecondaryCTA
+
+// ListView.Header = Header
+// ListView.Content = ListViewContent
+
+// export default ListView
+
+
+
+{/* <View>
+      <View.Header>
+        <View.Header.Left>
+          <View.Header.Left.Title>List All Items</View.Header.Left.Title>
+        </View.Header.Left>
+        <View.Header.Right>
+          <View.Header.Right.SecondaryCTA label="Secondary CTA" />
+          <View.Header.Right.PrimaryCTA label="Primary CTA" />
+        </View.Header.Right>
+      </View.Header>
+      <View.Content>
+        <div className="flex justify-center items-center h-[100%]">CONTENT FOR LIST VIEW</div>
+      </View.Content>
+    </View> */}

@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout >
+      <Layout.Header>
+        <Layout.Header.Left>
+          <Layout.Header.Left.Title >All List Data</Layout.Header.Left.Title>
+        </Layout.Header.Left>
+        <Layout.Header.Right>
+          <Layout.Header.Right.PrimaryCTA >
+            Primary CTA
+          </Layout.Header.Right.PrimaryCTA>
+          <Layout.Header.Right.SecondaryCTA>
+            Primary CTA
+          </Layout.Header.Right.SecondaryCTA>
+        </Layout.Header.Right>
+      </Layout.Header>
+      <Layout.Content>
+        <div style={{ height: 600, display: "flex", justifyContent: "center", alignItems: "center" }}>The Content</div>
+      </Layout.Content>
+    </Layout>
   );
 }
 
